@@ -5,7 +5,7 @@ import ReactDom from 'react-dom';
 import styled, {css} from 'styled-components';
 import {Ruler} from '../components/lib/ruler';
 import {Container} from '../components/lib/styled';
-import {RtaijCommentator} from '../components/rtaij-commentator';
+// import {RtaijCommentator} from '../components/rtaij-commentator';
 import {RtaijGame} from '../components/rtaij-game';
 import {RtaijOverlay} from '../components/rtaij-overlay';
 import {RtaijRunner} from '../components/rtaij-runner';
@@ -54,9 +54,9 @@ const RunnerContainer = styled(NameContainer)`
 	bottom: 459px;
 `;
 
-const CommentatorContainer = styled(NameContainer)`
-	bottom: 354px;
-`;
+// const CommentatorContainer = styled(NameContainer)`
+// 	bottom: 354px;
+// `;
 
 const infoStyle = css`
 	position: absolute;
@@ -95,9 +95,9 @@ const App = () => (
 		<RunnerContainer>
 			<RtaijRunner index={0} gradientBackground columnDirection />
 		</RunnerContainer>
-		<CommentatorContainer>
-			<RtaijCommentator index={0} gradientBackground columnDirection />
-		</CommentatorContainer>
+		{/*<CommentatorContainer>*/}
+		{/*	<RtaijCommentator index={0} gradientBackground columnDirection />*/}
+		{/*</CommentatorContainer>*/}
 
 		<GameContainer>
 			<RtaijGame {...infoHeights} />

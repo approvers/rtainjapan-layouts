@@ -5,7 +5,7 @@ export const TweetHighlighter: React.FunctionComponent<{
 	text: string;
 }> = (props) => (
 	<Highlighter
-		searchWords={['#rtainjapan']}
+		searchWords={['#限界LT']}
 		textToHighlight={props.text}
 		highlightStyle={{color: '#55acee', backgroundColor: 'inherit'}}
 	/>
