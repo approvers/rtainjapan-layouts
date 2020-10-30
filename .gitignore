@@ -4,7 +4,7 @@
 /graphics
 /extension
 /bundle-analyzer
-
+.idea/*.xml
 # Logs
 logs
 *.log
@@ -93,3 +93,9 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/rtainjapan-layouts.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
