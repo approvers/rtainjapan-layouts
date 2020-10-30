@@ -8,5 +8,4 @@ export default [
 	// { name: `${i++}. クロップをリセット`, complete: true },
 	// { name: `${i++}. ゲーム画面をクロップ`, complete: true },
 	// { name: `${i++}. Steam通知ポップアップOFF`, complete: true },
-	// { name: `${i++}. 音声の準備ができた`, complete: true },
 ];

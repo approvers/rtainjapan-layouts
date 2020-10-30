@@ -7,7 +7,7 @@ import {Tweet} from './lib/tweet';
 import blueLogoR from '../images/logo/blue/index.png';
 import brownLogoR from '../images/logo/brown/index.png';
 
-const {colorTheme} = nodecg.bundleConfig;
+const {colorTheme, hasSponsor} = nodecg.bundleConfig;
 
 const logos = (() => {
 	switch (colorTheme) {
@@ -63,7 +63,7 @@ const Sponsor = styled.div`
 	height: 100%;
 	width: 210px;
 	border-top-left-radius: 30px;
-	background-color: white;
+	background: url(https://i.imgur.com/w10XAGC.png) white no-repeat center;
 	box-sizing: border-box;
 	padding: 15px;
 
@@ -77,7 +77,6 @@ interface State {
 	logoRestTransformed: boolean;
 }
 interface Props {
-	showSponser?: boolean;
 	isBreak?: boolean;
 	bottomHeightPx: number;
 	TweetProps?: {
@@ -101,7 +100,7 @@ export class RtaijOverlay extends React.Component<Props, State> {
 					<LogoR src={this.state.logoR} />
 				</Top>
 				<Bottom style={{height: `${this.props.bottomHeightPx}px`}}>
-					{this.props.showSponser && <Sponsor />}
+					{hasSponsor && <Sponsor />}
 				</Bottom>
 				<Tweet
 					{...this.props.TweetProps}
