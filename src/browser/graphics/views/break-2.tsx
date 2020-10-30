@@ -213,7 +213,7 @@ const Break: React.FunctionComponent = () => {
 		<Root>
 			<FrameContainer>
 				<NextGame>
-					<NextGameHeader>次のゲーム</NextGameHeader>
+					<NextGameHeader>次の発表</NextGameHeader>
 					<NextGameTitle>{currentRun.title}</NextGameTitle>
 					<NextGameMisc>{makeMiscString(currentRun)}</NextGameMisc>
 				</NextGame>

@@ -46,7 +46,7 @@ export class EditRun extends React.Component<Props, Run> {
 				<Container>
 					<TypoGraphy variant='h1'>
 						{this.props.edit === 'current' ? '現在の' : '次の'}
-						ゲームを編集
+						登壇内容を編集
 					</TypoGraphy>
 					<TextField
 						defaultValue={this.props.defaultValue.title}
@@ -74,7 +74,7 @@ export class EditRun extends React.Component<Props, Run> {
 						return (
 							<div key={index}>
 								<TextField
-									label={`走者${index} 名前`}
+									label={`登壇者${index} 名前`}
 									defaultValue={runner.name}
 									onChange={(e) => {
 										this.updateRunnerInfo(
@@ -85,7 +85,7 @@ export class EditRun extends React.Component<Props, Run> {
 									}}
 								/>
 								<TextField
-									label={`走者${index} Twitch`}
+									label={`登壇者${index} Twitch`}
 									defaultValue={runner.twitch}
 									onChange={(e) => {
 										this.updateRunnerInfo(
@@ -96,7 +96,7 @@ export class EditRun extends React.Component<Props, Run> {
 									}}
 								/>
 								<TextField
-									label={`走者${index} ニコ生`}
+									label={`登壇者${index} ニコ生`}
 									defaultValue={runner.nico}
 									onChange={(e) => {
 										this.updateRunnerInfo(
@@ -107,7 +107,7 @@ export class EditRun extends React.Component<Props, Run> {
 									}}
 								/>
 								<TextField
-									label={`走者${index} Twitter`}
+									label={`登壇者${index} Twitter`}
 									defaultValue={runner.twitter}
 									onChange={(e) => {
 										this.updateRunnerInfo(

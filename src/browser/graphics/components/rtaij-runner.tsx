@@ -5,7 +5,7 @@ import {CurrentRun} from '../../../nodecg/replicants';
 export class RtaijRunner extends Nameplate {
 	public labelIcon = runnerIcon;
 
-	public label = 'Runner';
+	public label = 'Presenter';
 
 	public calcNewRunner = (newVal: CurrentRun) =>
 		newVal && newVal.runners[this.props.index];

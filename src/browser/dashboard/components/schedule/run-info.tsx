@@ -52,7 +52,7 @@ export class RunInfo extends React.Component<{
 					{label}&nbsp;(#{run.index})
 				</Label>
 				<LabeledDiv>
-					<Typography variant='caption'>ゲーム</Typography>
+					<Typography variant='caption'>発表</Typography>
 					<div>{run.title}</div>
 				</LabeledDiv>
 				<Divider />
@@ -71,7 +71,7 @@ export class RunInfo extends React.Component<{
 						<div>{run.runDuration}</div>
 					</LabeledDiv>
 					<LabeledDiv>
-						<Typography variant='caption'>機種</Typography>
+						<Typography variant='caption'>枠</Typography>
 						<div>{run.platform}</div>
 					</LabeledDiv>
 				</MiscContainer>

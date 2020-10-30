@@ -45,7 +45,7 @@ export class Typeahead extends React.Component<Props, State> {
 							<TextField
 								fullWidth
 								InputProps={getInputProps({
-									placeholder: 'ゲーム名',
+									placeholder: 'テーマ',
 								})}
 							/>
 							{isOpen && (
