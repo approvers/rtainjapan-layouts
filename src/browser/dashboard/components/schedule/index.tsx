@@ -103,12 +103,12 @@ export class Schedule extends React.Component<{}, State> {
 					{this.state.currentRun && (
 						<RunInfo
 							run={this.state.currentRun}
-							label='現在のゲーム'
+							label='現在の発表'
 						/>
 					)}
 					<Divider />
 					{this.state.nextRun && (
-						<RunInfo run={this.state.nextRun} label='次のゲーム' />
+						<RunInfo run={this.state.nextRun} label='次の発表' />
 					)}
 				</RunInfoContainer>
 				<EditControls>
@@ -116,13 +116,13 @@ export class Schedule extends React.Component<{}, State> {
 						color={pink}
 						ButtonProps={{onClick: this.editCurrentRun}}
 					>
-						編集：現在のゲーム
+						編集：現在の発表
 					</ColoredButton>
 					<ColoredButton
 						color={pink}
 						ButtonProps={{onClick: this.editNextRun}}
 					>
-						編集：次のゲーム
+						編集：次の発表
 					</ColoredButton>
 				</EditControls>
 				<EditRun

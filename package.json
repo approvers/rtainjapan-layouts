@@ -142,7 +142,7 @@
 			},
 			{
 				"name": "current-runners",
-				"title": "現在のゲームの走者",
+				"title": "現在の登壇者",
 				"file": "current-runners.html",
 				"width": 2,
 				"headerColor": "#00BEBE",

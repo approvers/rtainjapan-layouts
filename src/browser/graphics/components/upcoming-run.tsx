@@ -60,7 +60,7 @@ export class UpcomingRun extends React.Component<{
 		const {title, category} = run;
 		const runners =
 			run.runners &&
-			`Runner: ${run.runners
+			`Presenter: ${run.runners
 				.map((runner) => runner.name)
 				.filter(Boolean)
 				.join(', ')}`;
