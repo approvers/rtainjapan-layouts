@@ -7,8 +7,6 @@ import styled, {css} from 'styled-components';
 import {Container} from '../components/lib/styled';
 import {RtaijOverlay} from '../components/rtaij-overlay';
 import {UpcomingRun} from '../components/upcoming-run';
-import notificationIconBlue from '../images/break/notification-blue.png';
-import notificationIconBrown from '../images/break/notification-brown.png';
 import {Schedule, CurrentRun} from '../../../nodecg/replicants';
 
 const currentRunRep = nodecg.Replicant('current-run');
@@ -34,12 +32,6 @@ const StyledContainer = styled(Container)`
 				0px 0px
 			);
 		`}
-`;
-
-const NotificationIcon = styled.img`
-	position: absolute;
-	left: ${onsite ? 669 : 60}px;
-	bottom: 15px;
 `;
 
 const NotificationText = styled.div`
@@ -121,13 +113,6 @@ class Break extends React.Component<{}, State> {
 					bottomHeightPx={150}
 					isBreak
 					TweetProps={{rowDirection: true}}
-				/>
-				<NotificationIcon
-					src={
-						colorTheme === 'brown'
-							? notificationIconBrown
-							: notificationIconBlue
-					}
 				/>
 				<NotificationText>
 					準備中です、しばらくお待ち下さい

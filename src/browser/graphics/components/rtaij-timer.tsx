@@ -1,7 +1,6 @@
 import {BaseInfo} from './lib/base-info';
-import {Timer, CurrentRun} from '../../../nodecg/replicants';
+import {Timer} from '../../../nodecg/replicants';
 
-const currentRunRep = nodecg.Replicant('current-run');
 const timerRep = nodecg.Replicant('timer');
 
 const timerStateColorMap = {
@@ -32,7 +31,6 @@ export class RtaijTimer extends BaseInfo {
 			super.componentDidMount();
 		}
 		timerRep.on('change', this.timerChangeHandler);
-		currentRunRep.on('change', this.currentRunChangeHandler);
 	}
 
 	public componentWillUnmount() {
@@ -40,7 +38,6 @@ export class RtaijTimer extends BaseInfo {
 			super.componentWillUnmount();
 		}
 		timerRep.removeListener('change', this.timerChangeHandler);
-		currentRunRep.removeListener('change', this.currentRunChangeHandler);
 	}
 
 	private readonly timerChangeHandler = (newVal: Timer) => {
@@ -48,15 +45,6 @@ export class RtaijTimer extends BaseInfo {
 		this.setState({
 			primaryInfo: newVal.formatted,
 			primaryInfoColor: color,
-		});
-	};
-
-	private readonly currentRunChangeHandler = (newVal: CurrentRun) => {
-		if (!newVal) {
-			return;
-		}
-		this.setState({
-			secondaryInfo: `予定タイム ${newVal.runDuration || '???'}`,
 		});
 	};
 }
